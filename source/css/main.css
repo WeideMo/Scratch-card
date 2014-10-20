@@ -1,0 +1,192 @@
+﻿/*! define alice/base/1.0.1/base-debug.css */
+/* alice.base 样式模块 */
+
+@charset "utf-8";
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+    color:#000;background:#fff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* 清理浮动 */
+.fn-clear:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+/* 去掉列表前的标识, li 会继承 */
+ol,ul {
+    list-style:none;
+}
+.fn-clear {
+    zoom:1; /* for IE6 IE7 */
+}
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    margin:0;padding:0;
+}
+/* 首页 */
+.header{
+  width:100%;
+  height: auto;
+}
+.header img{
+     width: 100%;
+     height: auto;
+     vertical-align: middle;
+     border: 0;
+   }
+.test-content{
+  background: #e79a39;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.content-area{
+  background:#fff;
+  width: 95%;
+  border-radius: 12px;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+.tips-wrap{
+  background: #e79a39;
+  width: 95%;
+  height: 40px;
+  line-height: 40px;  
+  margin:5px auto 0px auto;
+}
+.tips-message{
+  color: #7e2100;
+  font-size: 14px;
+  font-weight: bold;
+}
+.submit-btn{
+  width: 120px;
+  height:40px;
+  background:#7e2100;
+  color: #ffde1b;
+  font-size: 24px;
+  font-weight:bold;
+  border:0;
+  border-radius: 12px;
+  float: right;
+}
+.scratch-wrap{
+  width: 100%;
+  background: #d43e06;
+}
+.price-list{
+  color: #ffef8f;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 0 15px 20px;
+  position: relative;
+}
+.fin-img{
+  position: absolute;
+  left: 50%;
+  bottom:-4px;
+   z-index:5;
+}
+.fin-img img{
+  border: 0;
+  vertical-align: middle;
+  width: 80%;
+  height: 80%;
+ z-index:5;
+}
+body {  
+      moz-user-select: none;  
+      webkit-user-select: none;  
+      font-family: "微软雅黑";
+      z-index: 0;
+}   
+div,select,input,p,ul,li {  
+    margin: 0;  
+    padding: 0;  
+}   
+ 
+#container{
+  width: 95%;
+  height: 60px;
+}
+#lamp{
+    display: none;
+}
+#mycan{
+  border-radius:10px;
+  margin:0 5px 0 5px;
+  position: relative;
+  z-index:10;
+}
+.tips-wrap2{
+ background: #d43e06;
+ text-align: center;  
+}
+.tips-text{
+ font-size: 12px;
+ color: #fff;
+}
+.tips-link{
+ font-size: 12px;
+ color: #fff;
+}
+.user-wrap{ 
+  width: 100%;
+  background: #e89939;
+  padding:10px 0 10px 0;
+}
+.price-user{
+  width: 90%;
+  background: #e89939;
+  border: 3px solid #ffef8f;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.user-content{
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin-top: 10px;
+}
+.user-content li{
+ font-size: 13px;
+ color:#7e2100; 
+}
+.cloud{
+  width:100%;
+  height: auto;
+}
+.cloud img{
+     width: 100%;
+     height: auto;
+     vertical-align: middle;
+     border: 0;
+}
+.footer{ 
+  width: 100%;
+  background: #ffef8f;
+  padding:10px 0 10px 0;
+}
+.right: {
+  width: 90%;
+  background: #e89939;
+  border: 3px solid #ffef8f;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.right-content{
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin-top: 10px;
+}
+.right-content li{
+ font-size: 11px;
+ color:#000; 
+}

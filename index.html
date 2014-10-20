@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>刮刮卡</title>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="source/css/main.css">
+</head>
+<body>
+<div class="header">
+  <img src="source/images/header.jpg" alt="">
+</div>
+<div class="test-content">
+  <form action="">
+      <textarea name="" class="content-area" rows="4"></textarea>
+      <div class="tips-wrap">
+        <span class="tips-message">发送微博获得一次抽奖机会</span>
+        <button class="submit-btn">发&nbsp;&nbsp;送</button>
+      </div>
+  </form>
+</div>
+<div class="scratch-wrap">
+  <div class="price-list">
+    <ul>奖品：
+      <li>一等奖：100Mb</li>
+      <li>二等奖：10Mb</li>
+      <li>三等奖：1Mb</li>
+    </ul>
+    <div class="fin-img">
+      <img src="source/images/finger.png" alt="">
+    </div>
+  </div>
+    <canvas id="mycan"/>  
+</div>
+<div class="tips-wrap2">
+      <span class="tips-text">完成任务也能轻松赚取流量卡哦！</span>
+      <a class="tips-link" href="http://t.cn/8sdwYvU">http://t.cn/8sdwYvU</a>
+</div>
+<div class="user-wrap">
+  <div class="price-user fn-clear">
+   <ul class="user-content">
+     <li>用户ABC获得100M</li>
+     <li>用户ABC获得100M</li>
+     <li>用户ABC获得100M</li>
+     <li>……</li>
+   </ul>
+   <ul class="user-content">
+     <li>用户ABC获得100M</li>
+     <li>用户ABC获得100M</li>
+     <li>用户ABC获得100M</li>
+   </ul>
+  </div>
+</div>
+<div class="cloud">
+  <img src="source/images/cloud.jpg" alt="">
+</div>
+<div class="footer">
+  <div class="right fn-clear">
+    <ul class="right-content">
+     <li>世纪龙信息网络有限责任公司|在线客服</li>
+     <li>Copyright &copy; 2013 中国电信</li>
+   </ul>
+   <ul class="right-content">
+     <li>增值电信业务经营许可证A2.B1.B2-20090001</li>
+     <li>文网文[2008]053号|京ICP备09031924号</li>
+   </ul>
+  </div>
+</div>
+</body>
+<script src="source/js/scratch.js"></script>
+<script>
+    var cvs = new Scratch('#mycan', document.body.clientWidth-10, (document.body.clientWidth-10)*(114/459));
+    cvs.init('source/images/cloud.jpg', 'source/images/scratch.png', function(){
+        alert('恭喜您中了2元现金');
+    });
+</script> 
+</html>
